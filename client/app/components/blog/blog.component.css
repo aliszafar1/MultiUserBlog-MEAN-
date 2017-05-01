@@ -1,0 +1,85 @@
+.col-md-1{
+    padding-right: 0px;
+    width: 80px;
+}
+
+.col-md-11 p{
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+}
+
+.col-md-11 p#author{
+    color: rgba(0,0,0,.8);
+}
+
+.col-md-11 p.detail{
+    color: rgba(0,0,0,.44);
+    font-size: 12px;
+}
+
+.blog h1.blog-title{
+    font-family: 'Lato', sans-serif;
+    color: rgba(0,0,0,.8);
+}
+
+.blog p{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(0,0,0,.8);
+    font-size: 21px;
+}
+
+.form-group.comment, .comments-list{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1.0025%;
+    border: 1px solid rgba(0,0,0,.09);
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.03);
+}
+
+.form-group label{
+    font-family: 'Lato', sans-serif;
+    color: rgba(0,0,0,.6);
+    font-size: 12px;
+}
+
+.form-group input, .comments-list input{
+    height: 55px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: rgba(0,0,0,.6);
+    padding: 7px;
+    border: none;
+    outline: none;
+}
+
+.form-group input::placeholder, .comments-list input::placeholder{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: rgba(0,0,0,.2);
+}
+
+.comments-list button{
+    display: inline;
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+    border-color: rgba(0,0,0,.1);
+    border-top: none;
+    border-right: none;
+    border-radius: 0px;
+    float: right;
+    color: rgba(0,0,0,0.4);
+}
+
+.comments-list p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding: 7px;
+}
+
+.comments-list li{
+    font-family: 'Lato', sans-serif;
+    list-style-type: none;
+    padding-left: 14px;
+}

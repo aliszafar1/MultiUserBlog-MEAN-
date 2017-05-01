@@ -1,0 +1,16 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Blog</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <!--<li><a routerLink="signin">Signin</a></li>-->
+      <li *ngIf="uExist"><a routerLink="addPost">Write a Story</a></li>
+      <li *ngIf="!uExist"><a routerLink="signin">Signin</a></li>
+      <li *ngIf="!uExist"><a routerLink="signup">Signup</a></li>
+      <li *ngIf="uExist" (click)="onSignout()"><a href="">Signout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

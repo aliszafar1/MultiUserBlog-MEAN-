@@ -1,0 +1,22 @@
+.navbar-default{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    border-radius: 0px;
+}    
+    
+    
+.navbar-default .container-fluid{
+    padding-right: 36%;
+    padding-left: 18%;
+}
+
+.navbar-default .navbar-nav>li>a{
+    font-family: 'Lato', sans-serif;
+}
+
+@media(min-width: 930px){
+    .navbar-nav{
+        float: right;
+    }
+}

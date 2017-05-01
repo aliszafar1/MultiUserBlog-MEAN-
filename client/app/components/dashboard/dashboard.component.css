@@ -1,0 +1,52 @@
+.search-box{
+    width: 70%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.container{
+    width: 84vw;
+}
+
+.new .row{
+    margin-bottom: 1%;
+}
+
+.new .row img{
+    width: 100%;
+    height: 65vh;
+}
+
+h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,.9)!important;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ p{
+    font-family: 'Lato', sans-serif;
+    color: rgba(0,0,0,.8);
+}
+
+ h5{
+    font-family: 'Lato', sans-serif;
+    color: #00ab6b
+}
+
+h6{
+    font-family: 'Lato', sans-serif;
+    color: rgba(0,0,0,.44);
+}
+
+.col-md-4 img{
+    width: 100%;
+    height: 40vh;;
+}
+#d0{
+    display: none;
+}

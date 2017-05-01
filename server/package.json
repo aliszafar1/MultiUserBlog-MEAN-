@@ -1,0 +1,35 @@
+{
+  "name": "blogging-app",
+  "version": "1.0.0",
+  "description": "Its a multi user bloggging app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node": "app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "blogging"
+  ],
+  "author": "ali zafar",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cookie-parser": "^1.4.1",
+    "cors": "^2.8.3",
+    "express": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "jsonwebtoken": "^7.4.0",
+    "mongodb": "*",
+    "mongoose": "*",
+    "morgan": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "q": "^1.5.0"
+  }
+}

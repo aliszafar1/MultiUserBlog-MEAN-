@@ -1,0 +1,29 @@
+<div class="container">
+    <form [formGroup]="blogForm" (ngSubmit)="onPost(blogForm.value)">
+    <div class="form-group">
+        <label for="Title">Title</label>
+        <input class="form-control" type="text" [formControl]="blogForm.controls['title']">
+    </div>
+
+    <div class="form-group">
+        <label for="Body">Body</label>
+        <textarea class="form-control" rows="5" id="comment"  [formControl]="blogForm.controls['body']"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="Category">Category</label>
+        <input class="form-control" type="text"  [formControl]="blogForm.controls['category']">
+    </div>
+
+    <!--<div class="form-group">
+        <label for="Author">Author</label>
+        <input class="form-control" type="text" [formControl]="blogForm.controls['author']">
+    </div>-->
+
+    <div class="form-group">
+        <input type="file" id="image" class="displayNone" (change)="onChange($event)" id="image">
+    </div>
+
+    <button type="submit" class="btn btn-block btn-primary">POST BLOG</button>
+    </form>
+</div>

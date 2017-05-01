@@ -1,0 +1,34 @@
+<div class="container">
+    <form [formGroup]="signupForm" (ngSubmit)="onSignup(signupForm.value)">
+    <div class="form-group">
+        <input class="form-control" type="text" [formControl]="signupForm.controls['firstname']" placeholder="First Name">
+    </div>
+
+    <div class="form-group">
+        <input class="form-control" type="text" [formControl]="signupForm.controls['lastname']" placeholder="Last Name">
+    </div>
+
+    <div class="form-group">
+        <input class="form-control" type="text"  [formControl]="signupForm.controls['username']" placeholder="Username">
+    </div>
+
+    <div class="form-group">
+        <input class="form-control" type="text" [formControl]="signupForm.controls['email']" placeholder="Email">
+    </div>
+
+    <div class="form-group">
+        <input class="form-control" type="password" [formControl]="signupForm.controls['password']" placeholder="Password">
+    </div>
+
+    <div class="form-group">
+        <input class="form-control" type="password" [formControl]="signupForm.controls['cpassword']" placeholder="Confirm Password">
+    </div>
+
+    <p>Choose File to Select</p>
+    <div class="form-group">
+        <input type="file" id="image" class="displayNone" (change)="onChange($event)" id="image">
+    </div>
+    
+    <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+    </form>
+</div>

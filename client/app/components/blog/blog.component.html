@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-1">
+            <img src="{{blogDetail?.authorIMG}}" alt="profile image" style="border-radius: 50%; width: 65px; height: 65px;">
+        </div>
+        <div class="col-md-11">
+            <p id="author">{{ blogDetail?.author }}</p>
+            <p class="detail">{{ blogDetail?.category }}</p>
+            <p class="detail">{{ blogDetail?.date | date }}</p>
+        </div>
+    </div>
+    <div class="blog">
+        <h1 class="blog-title">{{ blogDetail?.title }}</h1>
+        <img src="{{blogDetail?.url}}" alt="Blog Image" style="width: 100%; height: 54vh;">
+        <p>{{blogDetail?.body}}</p>
+    </div>
+
+    <div class="form-group comment" *ngIf="uExist">
+        <input type="text" #comment placeholder="Your Comments" (keyup.enter)="onComment(comment.value, blogDetail?._id)">
+    </div>
+        <!--*ngIf="blogDetail?.comment"-->
+    <div class="comments-list" *ngFor="let comments of blogDetail?.comment">
+            <button *ngIf="uExist" class="btn btn-md btn-primary" (click)="onDelete(blogDetail?._id, comments._id)">X</button>
+        <p>{{ comments.msg }} </p>
+        <input *ngIf="uExist" type="text" #replyCmt placeholder="Reply Comment" (keyup.enter)="onReplyCmt(replyCmt.value, blogDetail?._id, comments._id)">
+    </div>
+</div>

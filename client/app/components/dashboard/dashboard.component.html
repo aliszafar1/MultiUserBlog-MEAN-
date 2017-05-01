@@ -1,0 +1,34 @@
+<div class="container">
+    <div *ngFor="let blog of blogValue; let i = index">
+        <div class="new" *ngIf="i == 0">
+            <a routerLink="/blog/{{blog._id}}">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="{{blog.url}}" alt="blog-image">
+                </div>
+                <div class="col-md-4">
+                    <h3 *ngIf="i == 0">{{ blog.title }}</h3>
+                    <p>{{ blog.body | slice:0:250 }}
+                        <span style="color:#00ab6b">Read More</span>
+                    </p>
+                    <h5>{{ blog.author }}</h5>
+                    <h6>{{ blog.date | date}}</h6>
+                </div>
+            </div>            
+        </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let blog of blogValue; let i = index" id="d{{i}}">
+            <a routerLink="/blog/{{blog._id}}">
+            <img src="{{blog.url}}" alt="blog-image">
+            <h3>{{ blog.title }}</h3>
+            <p>{{ blog.body | slice:0:250 }}
+                <span style="color:#00ab6b">Read More</span>
+            </p>
+            <h5>{{ blog.author }}</h5>
+            <h6>{{ blog.date | date: 'mediumDate'}}</h6>
+            </a>
+        </div>
+    </div>
+</div>
